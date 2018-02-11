@@ -2,7 +2,6 @@ var bodyParser = require('body-parser');
 var express    = require('express'),
     app        = express(),
     port       = process.env.PORT || 3000;
-
 var s_key      = process.env.S_KEY || '123';
 
 app.use(bodyParser.json());
@@ -25,5 +24,4 @@ app.post('/sumo_log_router', function(req, res) {
 })
 
 app.listen(port);
-
 console.log('API server started listening on: ' + port);

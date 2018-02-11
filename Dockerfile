@@ -5,7 +5,7 @@ RUN mkdir /home/node/app
 WORKDIR /home/node/app
 
 ADD server.js .
-Add package.json .
+ADD package.json .
 
 RUN chown node:node /home/node/app -R
 
