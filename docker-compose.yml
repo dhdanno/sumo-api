@@ -1,0 +1,8 @@
+version: '2'
+services:
+  sumo-api:
+    build: .
+    ports:
+     - "3000:3000"
+    environment:
+     - "S_KEY=1234"
